@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program A</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Inter';
+        src: url('Inter-Bold.ttf')
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 1000px;
+        width: 1000px;
+        background: radial-gradient(ellipse at top, #001720 5%, transparent 70%),
+            radial-gradient(ellipse at bottom, #000204 100%, transparent);
+
+    }
+    .img-contact-icon{
+        position: absolute;
+        top: 225px;
+        left: 70px;
+    }
+    form {
+        background-color: #000306;
+        border-radius: 72px;
+        /* max-width: 700px;
+        max-height: 700px; */
+        padding: 100px;
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* form h3{
+        text-align: center;
+        color: white;
+        font-family: Arial;  
+    } */
+
+    form input[type=text]::-webkit-input-placeholder {
+        color: #6B8B9A;
+    }
+
+    form input[type=text] {
+
+        position: relative;
+        top: 130px;
+        left: 30px;
+        width: 350px;
+        height: 45px;
+        border: 0;
+        padding-left: 10px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #000E14;
+        font-family: 'Inter';
+        opacity: 1;
+        font-size: 14px;
+    }
+
+    form input[type=password]::-webkit-input-placeholder {
+        color: #6B8B9A;
+    }
+
+    form input[type=password] {
+        position: relative;
+        top: 150px;
+        left: 30px;
+        width: 350px;
+        height: 45px;
+        border: 0;
+        padding-left: 10px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #000E14;
+        font-family: 'Inter';
+        opacity: 1;
+        font-size: 14px;
+    }
+
+    form input[type=submit] {
+        position: relative;
+        left: 30px;
+        top: 200px;
+        width: 350px;
+        height: 70px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #000E14;
+        font-family: 'Inter';
+        color: #6B8B9A;
+        padding-left: 10px;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <form>
+        <!-- <h3>Login</h3> -->
+        <input type="text" name="user" placeholder="nome de usuário" />
+        <input type="password" name="senha" placeholder="sua senha" />
+        <input type="submit" name="acao" value="ENTRAR" />
+        <img class="img-contact-icon" src="Contact-icon.png" alt="contact icon">
+    </form>
+</body>
+
+</html>
